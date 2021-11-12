@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_Bullet",
-    "path": "sprites/spr_Bullet/spr_Bullet.yy",
+    "name": "spr_Enemy",
+    "path": "sprites/spr_Enemy/spr_Enemy.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_NormalEnemy",
+    "path": "objects/obj_NormalEnemy/obj_NormalEnemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,19 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_NormalEnemy","path":"objects/obj_NormalEnemy/obj_NormalEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "obj_enemys",
+    "path": "folders/Objects/obj_enemys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Bullet",
+  "name": "obj_Moving",
   "tags": [],
   "resourceType": "GMObject",
 }

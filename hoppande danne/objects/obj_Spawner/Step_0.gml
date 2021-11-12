@@ -1,5 +1,5 @@
 var enemySpawn = irandom(20)
-
+var enemySpawn = 
 if(!collision_rectangle(0,0,768,-150,obj_Platform,false,false)){
 	if(enemySpawn == 20) instance_create_layer(random_range(64,704),random_range(-10,-150),"Instances",obj_Enemy);
 	else if(enemySpawn == 1) instance_create_layer(random_range(64,704),random_range(-10,-150),"Instances",obj_Drops);

@@ -18,7 +18,7 @@
 if(x <= -32) x = room_width+32; 
 else if(x >= room_width+32) x = -32;
 if(y >= room_height){
-	event_perform(ev_user0, 0);	
+	if(obj_Spawner.point > obj_Spawner.highScore) with(obj_SaveLoadManger){event_user(0);}
 	room_restart();
 }
 if(place_meeting(x,y,obj_Enemy)){

@@ -1,17 +1,15 @@
 /// @description Load Game
+if(file_exists("savedgame.save")){
+	var _buffer = buffer_load("savedgame.save");
+	var _string = buffer_read(_buffer, buffer_string);	
+	buffer_delete(_buffer);
 
-if(file_exists("savedgame.sav")){
-	var _wrapper = loadJSON("savedgame.sav");
-	var _list = _wrapper [? "ROOT"];
-	
-	for (var i = 0; i < ds_list_size(_list); i++){
-		var _map = _list[| i];
-		
-		var _score = _map[? "points"]
-		obj_Spawner.highScore = _score
+	var _loadData = json_parse(_string);
+	while(array_length(_loadData) > 0){
+		var _loadEntity = array_pop(_loadData);
+		with(obj_Spawner){
+			highScore = _loadEntity.point;
+		}
 	}
-	ds_map_destroy(_wrapper);
-	show_debug_message("Game loaded");
-
+	show_debug_message("game Loaded!" + _string);
 }
-

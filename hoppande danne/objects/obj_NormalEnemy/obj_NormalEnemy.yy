@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_Plattform",
-    "path": "sprites/spr_Plattform/spr_Plattform.yy",
+    "name": "spr_Enemy",
+    "path": "sprites/spr_Enemy/spr_Enemy.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -22,19 +22,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"hsp","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"choose(1,2,3)","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spd","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"0.9","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"dropOff","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_plattforms",
-    "path": "folders/Objects/obj_plattforms.yy",
+    "name": "obj_enemys",
+    "path": "folders/Objects/obj_enemys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Platform",
+  "name": "obj_NormalEnemy",
   "tags": [],
   "resourceType": "GMObject",
 }
