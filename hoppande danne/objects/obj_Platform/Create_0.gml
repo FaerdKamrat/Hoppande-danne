@@ -1,3 +1,5 @@
+//rng to see with type of platform. and makes sure 
+//that it does not spawn when the game begin
 var typeRNG = random(100);
 if(y < 0){
 	if(typeRNG <= 5) type = 2;

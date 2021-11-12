@@ -7,9 +7,7 @@ if(file_exists("savedgame.save")){
 	var _loadData = json_parse(_string);
 	while(array_length(_loadData) > 0){
 		var _loadEntity = array_pop(_loadData);
-		with(obj_Spawner){
-			highScore = _loadEntity.point;
-		}
+		global.highScore = _loadEntity.point;
 	}
 	show_debug_message("game Loaded!" + _string);
 }

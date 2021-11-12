@@ -1,6 +1,15 @@
+//exe playerlimit script.
 playerLimit();
-image_angle += 0.4;
-if(hp <= 0) instance_destroy(self);
 
-if(type == 2 && place_meeting(x, y, obj_ColistionBox)) hsp = -hsp;
+//spins enemy a little bit every frame
+image_angle += 0.4;
+
+//kills its self if hp is 0
+if(hp <= 0){ 
+	instance_destroy(self);
+	audio_play_sound(sx_EnemyDeath, 10, false);	
+}
+
+// hsp is moves other dir if it touch the outer wall.
+if(type == 1 && place_meeting(x, y, obj_ColistionBox)) hsp = -hsp;
 
