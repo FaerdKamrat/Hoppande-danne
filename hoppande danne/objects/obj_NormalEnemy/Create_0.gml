@@ -1,6 +1,7 @@
-type = choose(0,1);
+type = choose(1,2);
 
 image_speed = 0;
-image_index = 1;
+image_index = type;
 
-hp = 1;
+hp = type;
+if(type == 2) hsp = 1.5;

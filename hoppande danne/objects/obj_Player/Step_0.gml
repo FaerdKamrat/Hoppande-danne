@@ -21,7 +21,7 @@ if(y >= room_height){
 	if(obj_Spawner.point > obj_Spawner.highScore) with(obj_SaveLoadManger){event_user(0);}
 	room_restart();
 }
-if(place_meeting(x,y,obj_Enemy)){
+if(place_meeting(x,y,obj_NormalEnemy)){
 	isDead = true;
 	vsp = lerp(vsp, 20, 1.3);
 }
