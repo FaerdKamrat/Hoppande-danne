@@ -13,4 +13,5 @@ if(hp <= 0){
 
 // hsp is moves other dir if it touch the outer wall.
 if(type == 1 && place_meeting(x, y, obj_ColistionBox)) hsp = -hsp;
+x+=hsp
 

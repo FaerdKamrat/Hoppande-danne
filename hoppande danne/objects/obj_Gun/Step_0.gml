@@ -36,3 +36,10 @@ y = obj_Player.y;
 		}
 	}
 #endregion mouseShot
+
+
+
+if(fixed_mouse_dir > 270 || fixed_mouse_dir < 90) {
+	image_yscale = 1;
+}
+else image_yscale = -1;

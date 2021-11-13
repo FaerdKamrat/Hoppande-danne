@@ -44,3 +44,9 @@ if(place_meeting(x,y,obj_NormalEnemy)){
 	audio_play_sound(sx_PlayerEnemyDeath, 10, false);
 	vsp = lerp(vsp, 20, 1.3);
 }
+
+fixed_mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+if(fixed_mouse_dir > 270 || fixed_mouse_dir < 90) {
+	image_xscale = 1;
+}
+else image_xscale = -1;
