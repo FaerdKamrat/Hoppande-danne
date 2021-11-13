@@ -1,0 +1,1 @@
+if(obj_SettingsButton.isSettings) draw_text_transformed(x+32,y,string(global.map_left),1,1,0);

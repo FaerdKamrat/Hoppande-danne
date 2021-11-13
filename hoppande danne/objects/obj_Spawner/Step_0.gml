@@ -21,3 +21,9 @@ if(!collision_rectangle(0, 0, 768, -150, obj_Platform, false, false)){
 		}
 	}
 }
+
+show_debug_message(global.highScore)
+if(!highscore_check && point > global.highScore){
+	highscore_check = true;
+	audio_play_sound(sx_BeatHighscore,10,false);
+}

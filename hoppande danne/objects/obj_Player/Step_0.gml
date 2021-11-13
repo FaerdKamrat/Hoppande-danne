@@ -1,7 +1,7 @@
 #region movemnt
 //key map. and diration veriy on button input
-	key_left = keyboard_check(ord("A"));
-	key_right = keyboard_check(ord("D"));
+	key_left = keyboard_check(ord(global.map_left)) || keyboard_check(vk_left);
+	key_right = keyboard_check(ord(global.map_right)) || keyboard_check(vk_right);
 	var moveH = key_right-key_left;
 /*
 checks if we are not dead so we can move 
@@ -29,7 +29,7 @@ if player goes under room he will die.
 and it save the heigh score if it has been beaten
 */
 if(y >= room_height){
-	if(obj_Spawner.point > global.highScore) with(obj_SaveLoadManger){event_user(0);}
+	if(obj_Spawner.point > global.highScore){ with(obj_SaveLoadManger){event_user(0);}}
 	room_restart();
 	audio_play_sound(sx_PlayerFallDeath, 10, false);
 }
@@ -39,7 +39,7 @@ isDead varible goes true and player cant move
 and it's draging player to under the room
 */
 if(place_meeting(x,y,obj_NormalEnemy)){
-	if(obj_Spawner.point > global.highScore) with(obj_SaveLoadManger){event_user(0);}
+	if(obj_Spawner.point > global.highScore){ with(obj_SaveLoadManger){event_user(0);}}
 	isDead = true;
 	audio_play_sound(sx_PlayerEnemyDeath, 10, false);
 	vsp = lerp(vsp, 20, 1.3);

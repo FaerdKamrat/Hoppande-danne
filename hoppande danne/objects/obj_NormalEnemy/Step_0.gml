@@ -8,6 +8,7 @@ image_angle += 0.4;
 if(hp <= 0){ 
 	instance_destroy(self);
 	audio_play_sound(sx_EnemyDeath, 10, false);	
+	obj_Spawner.point += 100*(type+1)
 }
 
 // hsp is moves other dir if it touch the outer wall.
