@@ -27,3 +27,6 @@ if(!highscore_check && point > global.highScore){
 	highscore_check = true;
 	audio_play_sound(sx_BeatHighscore,10,false);
 }
+
+
+

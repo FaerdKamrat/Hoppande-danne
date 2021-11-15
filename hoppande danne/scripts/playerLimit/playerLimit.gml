@@ -7,10 +7,12 @@ function playerLimit(){
 		var Y = (room_height/2-100);
 		if(obj_Player.y <= Y && obj_Player.vsp <= 2){
 			vspeed = lerp(vspeed, LerpVar2, lerpAmount)
+			layer_vspeed("Background", lerp(vspeed, LerpVar2, lerpAmount));
 	
 		}
 		else{
 			vspeed = lerp(vspeed, 0, lerpAmount+0.2);
+			layer_vspeed("Background", lerp(vspeed, 0, lerpAmount));
 			if(vspeed < 0.5) vspeed = 0;
 		}
 	}

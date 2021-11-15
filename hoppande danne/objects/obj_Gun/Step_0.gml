@@ -3,7 +3,7 @@
 //and tp its x,y to players x,y 
 fire_delay--;
 x = obj_Player.x;
-y = obj_Player.y;
+y = obj_Player.y-25;
 
 
 #region [W] shoot
